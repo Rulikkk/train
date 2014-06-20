@@ -1,0 +1,31 @@
+html, body, div {
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div {
+    background-image: url(../img/train.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);    
+    
+    -webkit-animation: train 90s cubic-bezier(1, 0.3, 0.3, 1) 0s infinite alternate;
+       -moz-animation: train 90s cubic-bezier(1, 0.3, 0.3, 1) 0s infinite alternate;
+         -o-animation: train 90s cubic-bezier(1, 0.3, 0.3, 1) 0s infinite alternate;
+            animation: train 90s cubic-bezier(1, 0.3, 0.3, 1) 0s infinite alternate;
+}
+
+@-webkit-keyframes train { from { background-position-x: 0; } to { background-position-x: 100%; }  }
+   @-moz-keyframes train { from { background-position-x: 0; } to { background-position-x: 100%; }  }
+     @-o-keyframes train { from { background-position-x: 0; } to { background-position-x: 100%; }  }
+        @keyframes train { from { background-position-x: 0; } to { background-position-x: 100%; }  }
